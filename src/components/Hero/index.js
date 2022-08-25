@@ -28,7 +28,7 @@ export default function Hero() {
     } else {
       console.log("We have the ethereum object", ethereum);
     }
-    // Check if we're authorized to access the user's wallet
+    // Check if we&apos;re authorized to access the user&apos;s wallet
     const accounts = await ethereum.request({ method: "eth_accounts" });
 
     // Users can have multiple authorized accounts, we grab the first one if its there!
@@ -112,7 +112,7 @@ export default function Hero() {
   };
 
   const mintDomain = async () => {
-    // Don't run if the domain is empty
+    // Don&apos;t run if the domain is empty
     if (!domain) {
       return;
     }
@@ -195,39 +195,35 @@ export default function Hero() {
     return (
       <div className="container px-5 py-24 mx-auto font-bold flex">
         <div className="bg-[hsla(0,0%,100%,.1)] bg-opacity-75 rounded-lg p-8 flex flex-col md:ml-auto w-full shadow-md">
-          <div className=" mb-4">
-            <div className="">
+          <div className="relative mb-4">
               <input
                 type="text"
                 placeholder="Domain"
                 value={domain}
                 onChange={(e) => setDomain(e.target.value)}
-                className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900"
+                className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 w-full"
               />
               <p className="tld"> {tld} </p>
-            </div>
           </div>
-          <div className=" mb-4">
             <input
               type="text"
               value={record}
               placeholder=" Your .luv name motto"
               onChange={(e) => setRecord(e.target.value)}
-              className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 "
+              className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 w-full"
             />
-          </div>
 
           {editing ? (
             <div className="">
               <button
-                className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none  rounded text-lg"
+                className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 disabled={loading}
                 onClick={updateDomain}
               >
                 Set record
               </button>
               <button
-                className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none rounded text-lg"
+                className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 onClick={() => {
                   setEditing(false);
                 }}
@@ -236,15 +232,13 @@ export default function Hero() {
               </button>
             </div>
           ) : (
-            <div>
-              <button
-                className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none rounded text-lg w-40"
-                disabled={loading}
-                onClick={mintDomain}
-              >
-                MINT
-              </button>
-            </div>
+            <button
+              className="bg-[#68E099]  border-0 py-2 px-6 focus:outline-none rounded text-lg"
+              disabled={loading}
+              onClick={mintDomain}
+            >
+              MINT
+            </button>
           )}
         </div>
       </div>
@@ -327,7 +321,7 @@ export default function Hero() {
       return (
         <div className="container">
           <p className="mb-8 leading-relaxed">Recently minted domains!</p>
-          <div className="flex ">
+          <div className="mint-list">
             {mints.map((mint, index) => {
               return (
                 <div className="mint-item" key={index}>
@@ -391,10 +385,10 @@ export default function Hero() {
             </h1>
             <p className="mb-8 leading-relaxed">
               All the cool kids on social media have have .eth/.sol name
-              domains. Here's how you can become cooler than them: by making
+              domains. Here &apos;s how you can become cooler than them: by making
               your own .luv Polygon name domain! Your .luv domain is your
               all-in-one domain/hosting, banking and billing, online
-              identification, user management, authentication and more.{" "}
+              identification, user management, authentication and more.
             </p>
           </div>
 
@@ -417,10 +411,10 @@ export default function Hero() {
               ENS.
             </h2>
             <p className="mb-6 text-xm  font-medium">
-              *Yeah so it'll only be as good as you make it. ENS uses pretty
-              cool technology but it's kinda mysterious and you can't really
+              *Yeah so it&apos;ll only be as good as you make it. ENS uses pretty
+              cool technology but it&apos;s kinda mysterious and you can&apos;t really
               learn about it by just reading random blog posts or vague tweet
-              threads. Instead, we'll hack around with the tech ourselves.
+              threads. Instead, we&apos;ll hack around with the tech ourselves.
             </p>
           </div>
 
@@ -435,8 +429,8 @@ export default function Hero() {
                       Pick up Polygon: a secure, low-cost, eco-friendly chain.{" "}
                     </h1>
                     <p className="leading-relaxed mb-3">
-                      We'll be building on a "Layer 2" PoS chain built on top of
-                      Ethereum on the Polygon protocol. It's as secure as
+                      We&apos;ll be building on a &quot;Layer 2&quot; PoS chain built on top of
+                      Ethereum on the Polygon protocol. It&apos;s as secure as
                       Ethereum, but with a way better UX!
                     </p>
                   </div>
@@ -450,9 +444,9 @@ export default function Hero() {
                       Build a dApp with React, Replit and Metamask.
                     </h1>
                     <p className="leading-relaxed mb-3">
-                      We'll do something magical: make a React application that
+                      We&apos;ll do something magical: make a React application that
                       interacts with your smart contracts on the blockchain.
-                      We'll cover storing and fetching data, tracking
+                      We&apos;ll cover storing and fetching data, tracking
                       transactions, and working with Metamask to change
                       networks.
                     </p>
@@ -466,7 +460,7 @@ export default function Hero() {
                       wallets.{" "}
                     </h1>
                     <p className="leading-relaxed mb-3">
-                      We're going to write some client-side code to connect to
+                      We&apos;re going to write some client-side code to connect to
                       our Ethereum wallet and call functions on our smart
                       contract.
                     </p>
