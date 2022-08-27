@@ -377,7 +377,7 @@ export default function Hero() {
       <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
           <div>
-            <h1 className="title-font sm:text-7xl text-5xl font-bold mb-4 font-medium font-['Archivo']">
+            <h1 className="title-font sm:text-7xl text-5xl font-extrabold mb-4 font-medium font-['Archivo']">
               Blockchain <s>ownership</s> <br />
               own-ya-shit starts by owning your
               <span className="text-[#cc43f5] font-serif"> Polygon </span>
@@ -399,7 +399,7 @@ export default function Hero() {
           </div>
 
           <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col ">
-            <h2 className="title-font text-4xl font-medium  font-bold	 text-white-900 mb-12 text-center tracking-wider font-['Archivo']">
+            <h2 className="title-font text-4xl font-medium  font-extrabold	 text-white-900 mb-12 text-center tracking-wider font-['Archivo']">
               WHAT&apos;S YOUR .LUV NAME? IS THE NEW WHAT&apos;S YOUR CA$H APP NAME?
             </h2>
             <p className="mb-6 text-xm font-['Poppins']   font-medium">
