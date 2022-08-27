@@ -11,7 +11,7 @@ export default function Footer() {
     <div>
       <footer>
         <section className="text-white body-font bg-[#cc43f5]">
-          <h1 className="text-4xl sm:text-5xl font-bold text-5xl title-font mb5 text-center  text-[#000]  font-['Archivo']">
+          <h1 className="text-4xl sm:text-5xl font-bold text-5xl title-font mb5 text-center  text-[#fff]  font-['Archivo']">
             FAQs
           </h1>
           <div className="container px-5 py-24 mx-auto text-center">
@@ -19,7 +19,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#fff]  font-['Archivo']">
                       Will I be able to transfer my domain?
                     </h2>
                     <p className="leading-relaxed mb-6 font-['Poppins'] ">
@@ -33,7 +33,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#fff]  font-['Archivo']">
                       How will I be able to view my NFT .LUV website?
                     </h2>
                     <p className="leading-relaxed mb-6 font-['Poppins'] ">
@@ -46,7 +46,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#fff]  font-['Archivo']">
                       Can I resell my .LUV domain name?
                     </h2>
                     <p className="leading-relaxed mb-6 font-['Poppins'] ">
@@ -59,7 +59,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#fff]  font-['Archivo']">
                       Will I be able to search and find NFT domain websites on
                       Google or Bing?{" "}
                     </h2>
@@ -73,7 +73,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#fff]  font-['Archivo']">
                       Will there be some sort of ‘whois’ record of my personal
                       information associated to my domain?
                     </h2>
@@ -88,7 +88,7 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full ">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font mb-12   text-[#000]  font-['Archivo']">
+                    <h2 className="text-2xl font-medium title-font mb-12   text-[#fff]  font-['Archivo']">
                       How do trademarks work with NFT domains?
                     </h2>
                     <p className="leading-relaxed mb-6 font-['Poppins'] ">
