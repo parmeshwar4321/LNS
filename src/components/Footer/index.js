@@ -6,25 +6,26 @@ import twitterLogo from "../../assets/twitter-logo.svg";
 const TWITTER_HANDLE = "luvnft";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
-
 export default function Footer() {
   return (
     <div>
       <footer>
-        <section className="text-white body-font bg-[#a470ff]">
-          <h1 className="text-4xl font-medium title-font text-black mb-12 text-center">
+        <section className="text-white body-font bg-[#cc43f5]">
+          <h1 className="text-4xl sm:text-5xl font-bold text-5xl title-font mb5 text-center  text-[#000]  font-['Archivo']">
             FAQs
           </h1>
-          <div className="container px-5 py-24 mx-auto ">
+          <div className="container px-5 py-24 mx-auto text-center">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    How much does this cost?
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                      Will I be able to transfer my domain?
                     </h2>
-                    <p className="leading-relaxed mb-6">
-                    How much does this cost? All of our projects are free and open-source! You'll never need to pay for our guides, and we'll deploy on a testnet so your total cost for this whole thing will be $0.
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      Yes. Your domain is stored in your cryptocurrency wallet
+                      and can be transferred by you after you mint the name on
+                      the blockchain with your wallet.
                     </p>
                   </div>
                 </div>
@@ -32,11 +33,12 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    What's the time commitment?
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                      How will I be able to view my NFT .LUV website?
                     </h2>
-                    <p className="leading-relaxed mb-6">
-                    The whole project will probably take you like 5-10 hours. Depends on your skill level. Most people finish it the same weekend it kicks off.
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      You will need to use a mirroring service, a browser
+                      extension or a browser that supports NFT domains.{" "}
                     </p>
                   </div>
                 </div>
@@ -44,11 +46,12 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    Is this live or async?
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                      Can I resell my .LUV domain name?
                     </h2>
-                    <p className="leading-relaxed mb-6 ">
-                    It's all async! You can work on your project on your own time. All of the content will be available to you when you enrol and you'll have access to it forever :)
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      Yes, you can resell your NFT LUV Name on any compatible
+                      Polygon marketplace.{" "}
                     </p>
                   </div>
                 </div>
@@ -56,10 +59,13 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    Are there guides I follow to build the project?                    </h2>
-                    <p className="leading-relaxed mb-6">
-                    If you're a dev curious about web3 -- this will be perfect. It helps if you have basic web dev experience!
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                      Will I be able to search and find NFT domain websites on
+                      Google or Bing?{" "}
+                    </h2>
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      Major Web 2 search engines do not currently index NFT
+                      domain websites.
                     </p>
                   </div>
                 </div>
@@ -67,46 +73,54 @@ export default function Footer() {
               <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    What languages do I need to know for this?                    </h2>
-                    <p className="leading-relaxed mb-6">
-                    You just need to know some Javascript and the basics of React. Also, you should know the basics of running stuff inside a terminal. Basically, if you're familiar with the basics of web dev, you can do this for sure. If you don't, you'll struggle but you'll figure it out if you put in the work. We'll support you :).
+                    <h2 className="text-2xl font-medium title-font mb-12 text-center  text-[#000]  font-['Archivo']">
+                      Will there be some sort of ‘whois’ record of my personal
+                      information associated to my domain?
+                    </h2>
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      Not by default. Sharing ‘whois’ information is opt in i.e.
+                      something that you can choose to do if you want.
+                      Otherwise, your identity will not be publicly known.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div className="p-2 lg:w-1/3 md:w-1/2 w-full ">
                 <div className="h-full flex items-center p-4 rounded-lg">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-medium title-font text-black mb-12 text-center">
-                    Will I get an NFT for completing the project?                    </h2>
-                    <p className="leading-relaxed mb-6">
-                    Yes ser. Every successful completion of a buildspace project is rewarded with a unique NFT! Good luck.
+                    <h2 className="text-2xl font-medium title-font mb-12   text-[#000]  font-['Archivo']">
+                      How do trademarks work with NFT domains?
+                    </h2>
+                    <p className="leading-relaxed mb-6 font-['Poppins'] ">
+                      Trademark holders with proof of ownership can apply to
+                      claim ownership of trademarked names. If a trademark name
+                      has already been sold, then it will be refunded. Note -
+                      this process ends once domains have been distributed. LUV
+                      Name Service does not have the ability to move a domain
+                      once distribution has occurred.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
-              <img
-                className="object-contain h-24 w-64"
-                src={FooterImage?.src}
-                alt="footer logo"
-              />
-              <img
-                className="object-contain h-10 w-10 pointer-cursor"
-                alt="Twitter Logo"
-                src={twitterLogo?.src}
-  
-              />
-              <a
-                className="footer-text"
-                href={TWITTER_LINK}
-                target="_blank"
-                rel="noreferrer"
-              >{`built with @${TWITTER_HANDLE}`}</a>
+                <img
+                  className="object-contain h-24 w-64"
+                  src={FooterImage?.src}
+                  alt="footer logo"
+                />
+                <img
+                  className="object-contain h-10 w-10 pointer-cursor"
+                  alt="Twitter Logo"
+                  src={twitterLogo?.src}
+                />
+                <a
+                  className="footer-text"
+                  href={TWITTER_LINK}
+                  target="_blank"
+                  rel="noreferrer"
+                >{`built with @${TWITTER_HANDLE}`}</a>
+              </div>
             </div>
-            </div>
-            
           </div>
         </section>
       </footer>

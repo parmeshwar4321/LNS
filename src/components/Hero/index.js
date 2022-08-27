@@ -174,7 +174,7 @@ export default function Hero() {
     <div className="sm:flex justify-center ">
       <button
         onClick={connectWallet}
-        className="m-1 bg-[#a470ff] hover:bg-grey text-grey-darkest font-bold py-3 px-6 rounded inline-flex items-center"
+        className="m-1 bg-[#cc43f5] hover:bg-grey text-grey-darkest font-bold py-3 px-6 rounded inline-flex items-center"
       >
         <span className="ml-1 "> Connect Wallet</span>
       </button>
@@ -196,22 +196,22 @@ export default function Hero() {
       <div className="container px-5 py-24 mx-auto font-bold flex">
         <div className="bg-[hsla(0,0%,100%,.1)] bg-opacity-75 rounded-lg p-8 flex flex-col md:ml-auto w-full shadow-md">
           <div className="relative mb-4">
-              <input
-                type="text"
-                placeholder="Domain"
-                value={domain}
-                onChange={(e) => setDomain(e.target.value)}
-                className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 w-full"
-              />
-              <p className="tld"> {tld} </p>
-          </div>
             <input
               type="text"
-              value={record}
-              placeholder=" Your .luv name motto"
-              onChange={(e) => setRecord(e.target.value)}
+              placeholder="Domain"
+              value={domain}
+              onChange={(e) => setDomain(e.target.value)}
               className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 w-full"
             />
+            <p className="tld"> {tld} </p>
+          </div>
+          <input
+            type="text"
+            value={record}
+            placeholder=" Your .luv name motto"
+            onChange={(e) => setRecord(e.target.value)}
+            className="py-2 text-lg text-white bg-zinc-900 rounded-md pl-14 focus:outline-none focus:bg-zinc-600 focus:text-white-900 w-full"
+          />
 
           {editing ? (
             <div className="">
@@ -377,16 +377,16 @@ export default function Hero() {
       <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
           <div>
-            <h1 className="title-font sm:text-6xl text-xl font-bold mb-4 font-medium">
+            <h1 className="title-font sm:text-7xl text-5xl font-bold mb-4 font-medium font-['Archivo']">
               Blockchain <s>ownership</s> <br />
               own-ya-shit starts by owning your
-              <span className="text-[#a470ff]"> Polygon </span>
+              <span className="text-[#cc43f5] font-serif"> Polygon </span>
               .luv name
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed font-['Poppins'] ">
               All the cool kids on social media have have .eth/.sol name
-              domains. Here &apos;s how you can become cooler than them: by making
-              your own .luv Polygon name domain! Your .luv domain is your
+              domains. Here &apos;s how you can become cooler than them: by
+              making your own .luv Polygon name domain! Your .luv domain is your
               all-in-one domain/hosting, banking and billing, online
               identification, user management, authentication and more.
             </p>
@@ -398,23 +398,20 @@ export default function Hero() {
             {mints && renderMints()}
           </div>
 
-          <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col">
-            <h2 className="text-5xl font-medium title-font text-white-900 mb-12 text-center">
-              Learn how Polygon works by <br />
-              <span
-                className="
-              font-style: italic
-              "
-              >
-                building a faster and better*
-              </span>
-              ENS.
+          <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col ">
+            <h2 className="title-font text-4xl font-medium  font-bold	 text-white-900 mb-12 text-center tracking-wider font-['Archivo']">
+              WHAT&apos;S YOUR .LUV NAME? IS THE NEW WHAT&apos;S YOUR CA$H APP NAME?
             </h2>
-            <p className="mb-6 text-xm  font-medium">
-              *Yeah so it&apos;ll only be as good as you make it. ENS uses pretty
-              cool technology but it&apos;s kinda mysterious and you can&apos;t really
-              learn about it by just reading random blog posts or vague tweet
-              threads. Instead, we&apos;ll hack around with the tech ourselves.
+            <p className="mb-6 text-xm font-['Poppins']   font-medium">
+              You need another Cash App user’s email, phone number or $Cashtag
+              to send money with the fee of 3% of total amount you send. Cash
+              App also charges you 1.5% (Minimum 25 cents, maximum $15 to send
+              money instantly.
+            </p>
+            <p className="mb-6 text-xm font-['Poppins'] font-medium">
+              All you need is another user’s .LUV name to send $MATIC or $LUV
+              with the fee of .1 to send money instantly no matter the total
+              amount.
             </p>
           </div>
 
@@ -422,46 +419,44 @@ export default function Hero() {
           <section className="text-gray-100 body-font">
             <div className="container px-5 py-24 mx-auto">
               <div className="flex flex-wrap -m-4">
-                <div className="p-4 lg:w-1/3">
+                <div className="p-5 lg:w-1/3">
                   <div className="h-full bg-[hsla(0,0%,100%,.1)] bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                    <div className="">🧠📝</div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium mb-3">
+                    <div className="text-4xl mb-4">🧠📝</div>
+                    <h1 className="font-['Archivo'] font-bold title-font sm:text-2xl text-xl font-medium mb-3">
                       Pick up Polygon: a secure, low-cost, eco-friendly chain.{" "}
                     </h1>
-                    <p className="leading-relaxed mb-3">
-                      We&apos;ll be building on a &quot;Layer 2&quot; PoS chain built on top of
-                      Ethereum on the Polygon protocol. It&apos;s as secure as
-                      Ethereum, but with a way better UX!
+                    <p className="leading-relaxed mb-3 font-['Poppins'] ">
+                      We&apos;ll be building on a &quot;Layer 2&quot; PoS chain
+                      built on top of Ethereum on the Polygon protocol.
+                      It&apos;s as secure as Ethereum, but with a way better UX!
                     </p>
                   </div>
                 </div>
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-[hsla(0,0%,100%,.1)] bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                    <div className="  border-1                  width-300 line hight-100 font-size-60 font-weight-700">
-                      ✍️🏗
-                    </div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium mb-3">
+                    <div className="text-4xl mb-4">✍️🏗</div>
+                    <h1 className="font-['Archivo'] font-bold -font sm:text-2xl text-xl font-medium mb-3">
                       Build a dApp with React, Replit and Metamask.
                     </h1>
-                    <p className="leading-relaxed mb-3">
-                      We&apos;ll do something magical: make a React application that
-                      interacts with your smart contracts on the blockchain.
-                      We&apos;ll cover storing and fetching data, tracking
-                      transactions, and working with Metamask to change
+                    <p className="leading-relaxed mb-3 font-['Poppins'] ">
+                      We&apos;ll do something magical: make a React application
+                      that interacts with your smart contracts on the
+                      blockchain. We&apos;ll cover storing and fetching data,
+                      tracking transactions, and working with Metamask to change
                       networks.
                     </p>
                   </div>
                 </div>
                 <div className="p-4 lg:w-1/3">
                   <div className="h-full bg-[hsla(0,0%,100%,.1)] bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                    <div className="">💻🪢</div>
-                    <h1 className="title-font sm:text-2xl text-xl font-medium mb-3">
+                    <div className="text-4xl mb-4">💻🪢</div>
+                    <h1 className="font-['Archivo'] font-bold title-font sm:text-2xl text-xl font-medium mb-3">
                       Let your friends come in and mint a domain to their
                       wallets.{" "}
                     </h1>
-                    <p className="leading-relaxed mb-3">
-                      We&apos;re going to write some client-side code to connect to
-                      our Ethereum wallet and call functions on our smart
+                    <p className="leading-relaxed mb-3 font-['Poppins'] ">
+                      We&apos;re going to write some client-side code to connect
+                      to our Ethereum wallet and call functions on our smart
                       contract.
                     </p>
                   </div>
