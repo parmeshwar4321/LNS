@@ -1,4 +1,4 @@
-import twitterLogo from "../../assets/twitter-logo.svg";
+import web2_3 from "../../assets/diffweb2-web3.jpeg";
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import contractAbi from "../../utils/DomainAbi.json";
@@ -400,7 +400,8 @@ export default function Hero() {
 
           <div className="container mx-auto flex px-5 py-16 items-center justify-center flex-col ">
             <h2 className="title-font text-4xl font-medium  font-extrabold	 text-white-900 mb-12 text-center tracking-wider font-['Archivo']">
-              WHAT&apos;S YOUR .LUV NAME? IS THE NEW WHAT&apos;S YOUR CA$H APP NAME?
+              WHAT&apos;S YOUR .LUV NAME? IS THE NEW WHAT&apos;S YOUR CA$H APP
+              NAME?
             </h2>
             <p className="mb-6 text-xm font-['Poppins']   font-medium">
               You need another Cash App user’s email, phone number or $Cashtag
@@ -462,6 +463,13 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="content:center w-50">
+              <img
+                className="object-fit "
+                src={web2_3?.src}
+                alt="web2 vs. web3"
+              />
             </div>
           </section>
         </div>
